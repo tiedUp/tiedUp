@@ -49,6 +49,10 @@ namespace TiedUp.Core
                 tiedUpSpec.Header[0] = (byte)'T';
                 tiedUpSpec.Header[1] = (byte)'I';
                 tiedUpSpec.Header[2] = (byte)'E';
+                // Version of Struct + File
+                tiedUpSpec.Header[3] = (byte)'1';
+                tiedUpSpec.Header[4] = (byte)'0';
+                tiedUpSpec.Header[5] = (byte)'0';
                 
                 char[] managedCharArray = id.ToCharArray();
                 char* pId = tiedUpSpec.Id;

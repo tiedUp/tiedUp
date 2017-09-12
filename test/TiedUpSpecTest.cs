@@ -36,6 +36,9 @@ namespace test
                 Assert.Equal((byte)'T', tiedUpSpec.Header[0]);
                 Assert.Equal((byte)'I', tiedUpSpec.Header[1]);
                 Assert.Equal((byte)'E', tiedUpSpec.Header[2]);
+                Assert.Equal((byte)'1', tiedUpSpec.Header[3]);
+                Assert.Equal((byte)'0', tiedUpSpec.Header[4]);
+                Assert.Equal((byte)'0', tiedUpSpec.Header[5]);
             }            
         }
 

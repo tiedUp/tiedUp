@@ -7,13 +7,13 @@ namespace TiedUp.Core
     {
         [FieldOffset(0)]
         public fixed byte Header[Constants.SIZE_HEADER_ID];
-        [FieldOffset(4)]
+        [FieldOffset(7)]
         public fixed char Id[Constants.MAX_LENGTH_FOR_ID]; // 30 * 2 = 60 Bytes
-        [FieldOffset(66)]
+        [FieldOffset(69)]
         public long Start; // 8 Bytes
-        [FieldOffset(74)]
+        [FieldOffset(77)]
         public long End;   // 8 Bytes
-        [FieldOffset(83)]
-        public fixed byte Filler[429]; // 512 - sizeof(TiedUpSpec) - Filler
+        [FieldOffset(86)]
+        public fixed byte Filler[426]; // 512 - sizeof(TiedUpSpec) - Filler
     }
 }
